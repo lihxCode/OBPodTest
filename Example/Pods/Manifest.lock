@@ -1,0 +1,16 @@
+PODS:
+  - OBPodTest (0.1.0)
+
+DEPENDENCIES:
+  - OBPodTest (from `../`)
+
+EXTERNAL SOURCES:
+  OBPodTest:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  OBPodTest: 7525122d19b329881058d59468b1e9a212af3b77
+
+PODFILE CHECKSUM: 2b7bd1f62ad6fad3a54f60109aad162fd791e952
+
+COCOAPODS: 1.9.1

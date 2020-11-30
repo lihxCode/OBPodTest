@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		0099D28FA6C61C0D3FF4AE3B /* Pods_OBPodTest_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OBPodTest_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		040BD57B6E0A878C94EE31C5 /* Pods_OBPodTest_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OBPodTest_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3DD99E47A6824D29A121BCBE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		3DD99E47A6824D29A121BCBE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		4B88C027EA2E0E2AC671509E /* Pods-OBPodTest_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OBPodTest_Tests.debug.xcconfig"; path = "Target Support Files/Pods-OBPodTest_Tests/Pods-OBPodTest_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4D216D1F4B2314B842D55146 /* Pods-OBPodTest_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OBPodTest_Tests.release.xcconfig"; path = "Target Support Files/Pods-OBPodTest_Tests/Pods-OBPodTest_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5A2FE6E7BE54A19D9AD82CFF /* Pods-OBPodTest_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OBPodTest_Example.debug.xcconfig"; path = "Target Support Files/Pods-OBPodTest_Example/Pods-OBPodTest_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -65,8 +65,8 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BEE7217F0BB136DA082A355E /* OBPodTest.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = OBPodTest.podspec; path = ../OBPodTest.podspec; sourceTree = "<group>"; };
-		D09F0A948D7F145CD5FD2D85 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		BEE7217F0BB136DA082A355E /* OBPodTest.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = OBPodTest.podspec; path = ../OBPodTest.podspec; sourceTree = "<group>"; };
+		D09F0A948D7F145CD5FD2D85 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +193,6 @@
 				4B88C027EA2E0E2AC671509E /* Pods-OBPodTest_Tests.debug.xcconfig */,
 				4D216D1F4B2314B842D55146 /* Pods-OBPodTest_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -497,10 +497,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OBPodTest/OBPodTest-Prefix.pch";
 				INFOPLIST_FILE = "OBPodTest/OBPodTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -513,10 +515,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OBPodTest/OBPodTest-Prefix.pch";
 				INFOPLIST_FILE = "OBPodTest/OBPodTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
